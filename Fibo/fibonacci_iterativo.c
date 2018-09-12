@@ -210,21 +210,75 @@ char fibo_char(char n)
 }
 
 
-void num_max_unsigned()
+void num_max()
 {
-	char c = 10;
-	//while
-	c = fibo_char(c);// >= 2){++c; }
-		printf("%d\n", (int) c-1);
+	char c = 0;
+	while(fibo_char(++c) >= fibo_char(c-1));
+	printf("char %d\n", c-1);
+
+	short sh = 0;
+	while(fibo_shor(++sh) >= fibo_shor(sh-1));
+	printf("short %d\n", sh-1);
+
+	int i = 0;
+	while(fibo_int(++i) >= fibo_int(i-1));
+	printf("int%d\n", i-1);
+
+	long li = 0;
+	while(fibo_long(++li) >= fibo_long(li-1));
+	printf("long %li\n", li-1);
+
+	long long lli = 0;
+	while(fibo_long_long(++lli) >= fibo_long_long(lli-1));
+	printf("long long %Li\n", lli-1);
+
+	float fl = -1.0;
+	float fb = 0.0;
+	while((fb = fibo_float(++fl)) <= pow(2,sizeof(float)*8));
+	printf("float %f\n", fl-1.0);
+
+	double db = 0.0;
+	while(fibo_double(++db) <= pow(2,sizeof(double)*8));
+	printf("double %f\n", db-1.0);
 	
 }
 
+void num_max_unsigned()
+{
+	unsigned char c = 0;
+	while(fibo_char_u(++c) >= fibo_char_u(c-1));
+	printf("char %hhu\n", c-1);
+
+	unsigned short sh = 0;
+	while(fibo_short_u(++sh) >= fibo_short_u(sh-1));
+	printf("short %hu\n", sh-1);
+
+	unsigned int i = 0;
+	while(fibo_int_u(++i) >= fibo_int_u(i-1));
+	printf("int %u\n", i-1);
+
+	unsigned long li = 0;
+	while(fibo_long_u(++li) >= fibo_long_u(li-1));
+	printf("long %lu\n", li-1);
+
+	unsigned long long lli = 0;
+	while(fibo_long_long_u(++lli) >= fibo_long_long_u(lli-1));
+	printf("long long %llu\n", lli-1);
+
+	long double ldb = 0.0;
+	while(fibo_double_u(++ldb) <= pow(2,sizeof(long double)*8));
+	printf("long double %Lf\n", ldb-1.0);
+	
+}
 
 
 int main()
 {
 	//printf("%c\n", (char)pow(2,sizeof(unsigned char)*8));
 	//printf("%d\n", (int)fibo_char_u(200));
+	printf("--------------Signed---------------\n");
+	num_max();
+	printf("--------------Unsigned---------------\n");
 	num_max_unsigned();
 	return 0;
 }
