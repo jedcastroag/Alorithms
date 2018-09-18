@@ -7,8 +7,8 @@ unsigned long long fibo_long_long_u(unsigned long long n)
 	{
 		return 0;
 	}
-	unsigned long long f0 = 0, f1 = 1, temp = 0; 
-	for (unsigned long long i = 1; i < n; i++)
+	unsigned long long f0 = 0, f1 = 1, temp = 0,i; 
+	for (i = 1; i < n; i++)
 	{
 		temp = f0 + f1;
 		f0 = f1;
@@ -23,8 +23,8 @@ unsigned long fibo_long_u(unsigned long n)
 	{
 		return 0;
 	}
-	unsigned long  f0 = 0, f1 = 1, temp = 0; 
-	for (unsigned long i = 1; i < n; i++)
+	unsigned long  f0 = 0, f1 = 1, temp = 0,i; 
+	for (i = 1; i < n; i++)
 	{
 		temp = f0 + f1;
 		f0 = f1;
@@ -39,8 +39,8 @@ long double fibo_double_u(long double n)
 	{
 		return 0;
 	}
-	long double  f0 = 0, f1 = 1, temp = 0; 
-	for (long double i = 1.0; i < n; i++)
+	long double  f0 = 0, f1 = 1, temp = 0,i; 
+	for (i = 1.0; i < n; i++)
 	{
 		temp = f0 + f1;
 		f0 = f1;
@@ -55,8 +55,8 @@ unsigned int fibo_int_u(unsigned int n)
 	{
 		return 0;
 	}
-	unsigned int  f0 = 0, f1 = 1, temp = 0; 
-	for (unsigned int i = 1; i < n; i++)
+	unsigned int  f0 = 0, f1 = 1, temp = 0,i; 
+	for (i = 1; i < n; i++)
 	{
 		temp = f0 + f1;
 		f0 = f1;
@@ -71,8 +71,8 @@ unsigned short fibo_short_u(unsigned short n)
 	{
 		return 0;
 	}
-	unsigned short  f0 = 0, f1 = 1, temp = 0; 
-	for (unsigned short i = 1; i < n; i++)
+	unsigned short  f0 = 0, f1 = 1, temp = 0,i; 
+	for (i = 1; i < n; i++)
 	{
 		temp = f0 + f1;
 		f0 = f1;
@@ -87,8 +87,8 @@ unsigned char fibo_char_u(unsigned char n)
 	{
 		return 0;
 	}
-	unsigned char  f0 = 0, f1 = 1, temp = 0; 
-	for (unsigned char i = 1; i < n; i++)
+	unsigned char  f0 = 0, f1 = 1, temp = 0,i; 
+	for (i = 1; i < n; i++)
 	{
 		temp = f0 + f1;
 		f0 = f1;
@@ -103,8 +103,8 @@ long long fibo_long_long(long long n)
 	{
 		return 0;
 	}
-	long long f0 = 0, f1 = 1, temp = 0; 
-	for (long long i = 1; i < n; i++)
+	long long f0 = 0, f1 = 1, temp = 0,i; 
+	for (i = 1; i < n; i++)
 	{
 		temp = f0 + f1;
 		f0 = f1;
@@ -119,8 +119,8 @@ long fibo_long(long n)
 	{
 		return 0;
 	}
-	long  f0 = 0, f1 = 1, temp = 0; 
-	for (long i = 1; i < n; i++)
+	long  f0 = 0, f1 = 1, temp = 0,i; 
+	for (i = 1; i < n; i++)
 	{
 		temp = f0 + f1;
 		f0 = f1;
@@ -135,8 +135,8 @@ double fibo_double(double n)
 	{
 		return 0;
 	}
-	double  f0 = 0, f1 = 1, temp = 0; 
-	for (double i = 1.0; i < n; i++)
+	double  f0 = 0, f1 = 1, temp = 0,i; 
+	for (i = 1.0; i < n; i++)
 	{
 		temp = f0 + f1;
 		f0 = f1;
@@ -151,8 +151,8 @@ float fibo_float(float n)
 	{
 		return 0;
 	}
-	float  f0 = 0, f1 = 1, temp = 0; 
-	for (float i = 1.0; i < n; i++)
+	float  f0 = 0, f1 = 1, temp = 0,i; 
+	for (i = 1.0; i < n; i++)
 	{
 		temp = f0 + f1;
 		f0 = f1;
@@ -167,8 +167,8 @@ int fibo_int(int n)
 	{
 		return 0;
 	}
-	int  f0 = 0, f1 = 1, temp = 0; 
-	for (int i = 1; i < n; i++)
+	int  f0 = 0, f1 = 1, temp = 0,i; 
+	for (i = 1; i < n; i++)
 	{
 		temp = f0 + f1;
 		f0 = f1;
@@ -183,8 +183,8 @@ short fibo_shor(short n)
 	{
 		return 0;
 	}
-	short  f0 = 0, f1 = 1, temp = 0; 
-	for (short i = 1; i < n; i++)
+	short  f0 = 0, f1 = 1, temp = 0,i; 
+	for (i = 1; i < n; i++)
 	{
 		temp = f0 + f1;
 		f0 = f1;
@@ -199,8 +199,8 @@ char fibo_char(char n)
 	{
 		return 0;
 	}
-	char  f0 = 0, f1 = 1, temp = 0; 
-	for (char i = 1; i < n; i++)
+	char  f0 = 0, f1 = 1, temp = 0,i; 
+	for (i = 1; i < n; i++)
 	{
 		temp = f0 + f1;
 		f0 = f1;
@@ -222,7 +222,7 @@ void num_max()
 
 	int i = 0;
 	while(fibo_int(++i) >= fibo_int(i-1));
-	printf("int%d\n", i-1);
+	printf("int %d\n", i-1);
 
 	long li = 0;
 	while(fibo_long(++li) >= fibo_long(li-1));
