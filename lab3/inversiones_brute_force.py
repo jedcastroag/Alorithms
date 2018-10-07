@@ -1,7 +1,7 @@
 import time
 
 
-def inversions(A, n):
+def inversiones_brute_force(A, n):
     inv = 0
     for i in range(n-1):
         for j in range(i+1, n):
@@ -18,6 +18,6 @@ file.close()
 n = int(content[0])
 arr = list(map(int, content[1].split()))
 t = time.time()
-inversions(arr, N)
+inversiones_brute_force(arr, N)
 t = time.time() - t
 print t
