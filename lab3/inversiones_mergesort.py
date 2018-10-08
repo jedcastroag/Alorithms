@@ -36,17 +36,53 @@ def merge_sort(A, s, e):
     return inv
 
 
-file = open("input.txt", "r")
-content = file.readlines()
-file.close()
-N = 10**5
-arr = list(map(int, content[1].split()))
-times = []
-for i in range(100):
-    aux = arr[:]
-    t = time.time()
-    merge_sort(aux, 0, N-1)
-    t = time.time() - t
-    times.append(t)
-np_times = np.array(times)
-print " time: ", np_times.mean(), " s"
+def case1():
+    file = open("input.txt", "r")
+    content = file.readlines()
+    file.close()
+    N = 10**5
+    arr = list(map(int, content[1].split()))
+    times = []
+    ans = 0
+    for i in range(100):
+        aux = arr[:]
+        t = time.time()
+        ans = merge_sort(aux, 0, N-1)
+        t = time.time() - t
+        times.append(t)
+    np_times = np.array(times)
+    print ans, " time: ", np_times.mean(), " s"
+    pass
+
+
+def case2():
+    N = 10**5
+    ans = 0
+    times = []
+    for i in range(100):
+        t = time.time()
+        ans = merge_sort(list(range(N)), 0, N-1)
+        t = time.time() - t
+        times.append(t)
+    np_times = np.array(times)
+    print ans, " time: ", np_times.mean(), " s"
+    pass
+
+
+def case3():
+    N = 10**5
+    times = []
+    ans = 0
+    for i in range(100):
+        t = time.time()
+        ans = merge_sort(list(range(N, 0, -1)), 0, N-1)
+        t = time.time() - t
+        times.append(t)
+    np_times = np.array(times)
+    print ans, " time: ", np_times.mean(), " s"
+    pass
+
+
+case1()
+case2()
+case3()
