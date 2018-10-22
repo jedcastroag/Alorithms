@@ -26,12 +26,11 @@ def fac_n(t):
 
 
 def print_all():
-    arr = [1e+6, 6*1e+7, 3.6*1e+9, 8.64*1e+10, 2.592*1e+12, 3.153*1e+13,
-        3.153*1e+15]
-    # for i in arr:
-    #     print nlogn(i)
+    arr = [1e+9, 6*1e+10, 3.6*1e+12, 8.64*1e+13, 2.592*1e+15, 3.153*1e+16, 3.153*1e+18]
     for i in arr:
-        print fac_n(i)
-    pass
+        print nlogn(i)
+    # for i in arr:
+    #    print fac_n(i)
+
 
 print_all()

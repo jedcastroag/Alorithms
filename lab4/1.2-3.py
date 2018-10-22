@@ -1,17 +1,15 @@
 # Hecho por Jefferson Castro.
 
 
-import math
-
-
 # f = 100n^2  vs  g = 2^n
 def f_vs_g():
     n = 1
-    while 100*(n**2) >=  2**n:
+    while 100*(n**2) >= 2**n:
         n += 1
 
-    return n;
+    return n
     pass
+
 
 print f_vs_g()
 
