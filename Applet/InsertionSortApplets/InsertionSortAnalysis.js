@@ -1,15 +1,14 @@
 const MAX_CASES = 1001;
 
-let comparation_total, time_total,
-    permut,
-    comparation_minCase, time_minCase,
-    comparation_maxCase, time_maxCase,
-    n = 4,
-    comparation_prob, time_prob,
+// Necesary Global Variables for compute the distributions
+let comparation_total, time_total, /*Acumulative variables for the nuber of comparations
+    between the elements of the array and the executed lines*/
+    permut, //Number of permutations variable
+    n = 4,//Initial congig
+    comparation_prob, time_prob, // probabilities arrays, initialized in start function
     comparation_cases = new Array(MAX_CASES), time_cases = new Array(MAX_CASES);
 
-let element;
-
+//Compute the number of comparations between elements 
 function isortCompSteps(aux) {
     let steps = 0,
         i = 0,
@@ -34,6 +33,8 @@ function isortCompSteps(aux) {
     return steps;
 }
 
+
+//Compute the number of executed lines 
 function isortTimeSteps(aux) {
     let steps = 0,
         i = 0,
@@ -63,6 +64,7 @@ function swap(v, i, j) {
     v[j] = x;
 }
 
+//build the permutations of the array 'v'
 function perm(v, i, n) {
     let j = comp_steps = 0;
     if (i == n) {
@@ -91,6 +93,7 @@ function createElement(element_tag = "", attributes = {}) {
     return element;
 }
 
+//Add the necesary elements to the DOM for rendering the results
 function init() {
     
     let view = document.getElementById('view-frame');
