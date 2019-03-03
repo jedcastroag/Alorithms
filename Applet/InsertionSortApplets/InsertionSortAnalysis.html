@@ -1,0 +1,96 @@
+<!-- saved from url=(0081)http://disi.unal.edu.co/~algorithms/applets/InsertSortCompPlot/IsortCompPlot.html -->
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>Insertion Sort Time Plot</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style media="screen">
+        body{
+            /* background-color:  #00FF85!important; */
+            background-color: whitesmoke;
+            font-family: "Verdana", sans-serif, serif;
+        }
+        .blue_bg {
+            background-color: lightblue;
+        }
+        #view-frame {
+            background-color: #0CBCCC !important;
+            width: 100%;
+            border-style: solid;
+            border-width: 0.25em;
+            border-color: black;
+            color: black;
+            font-size: 1.15em;
+        }
+        #input_div {
+            height: 3em !important;
+        }
+        .frame {
+            padding: 0.5em 0.5em;
+            border-width: 0.25em;
+            border-style: solid;
+            border-color: #FF4957;
+        }
+        .number_input{
+            width: 10%;
+            height: 25px;
+        }
+        .graphic {
+            background-color: #3358FF !important;
+            height: 300px /*80% auto*/;
+            width: 95% /*80% auto*/;
+        }
+        .no-gutters {
+            padding: 0px 0px;
+            border: 1px 1px;
+        }
+        .graphElem {
+            width: 100%;
+        }
+
+        .distribution {
+            background-color: #429299;
+            color: white;
+            height: 400px;
+        }
+
+        ul {
+            background-color: white;
+            color: black;
+            height: 85%;
+            overflow-x:scroll;
+            overflow-y:scroll;
+        }
+
+    </style>
+</head>
+
+<body text="#000000" link="#0000EE" vlink="#551A8B" alink="#FF0000">
+
+    <div class="">
+        <center>
+            <h1>
+                <font color="black">
+                    Distribution of Numbers of Comparations 
+                    Between Elements and of Executed Lines (Time)
+                </font>
+            </h1>
+        </center>
+    </div>
+
+    <div class="container">
+        <div class="" id="view-frame">
+
+        </div>
+    </div>
+
+    <script type="text/javascript" src="InsertionSortAnalysis.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+
+</html>
