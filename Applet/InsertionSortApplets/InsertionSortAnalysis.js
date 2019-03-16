@@ -1,3 +1,5 @@
+// Hecho por Jefferson Daniel Castro Aguilar
+
 const MAX_CASES = 1001;
 
 // Necesary Global Variables for compute the distributions
@@ -166,8 +168,8 @@ function plot(x, y, prob, total, id_frame, title) {
     let graph = document.getElementById(id_frame + '_graphic');
 
     Plotly.newPlot(graph, [{
-        x: x,
-        y: y,
+        x: x, // casos de comparaciones o lineas ejecutadas
+        y: y, // propbabilidad de los casos
         type: 'bar',
     }], {
         title: title + ' Distribution',
